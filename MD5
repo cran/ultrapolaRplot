@@ -1,0 +1,11 @@
+f85f85c201e0dcfef8d9dee3bfa9fbd9 *DESCRIPTION
+b97a7be52e326655cb2bf7f215992116 *NAMESPACE
+fa62e74874229628ab6a567fe58b9e80 *R/readtextgrid.R
+f3d10a64850e2fc06ae123d08dd944f6 *R/ultrapolaRplot.R
+345a61699fb21d47a9e191f925cae97b *inst/extdata/20150629171639.TextGrid
+19b0d8db119a86122cfd0e02a04b6fac *inst/extdata/README.md
+0ba7fe58805898d0ed6e623768dfb2c2 *inst/extdata/metadata.json
+f2d846cf6646e9f57c70a8a6187ea911 *man/Summary_ultrapolaRplot.Rd
+34518f4b188caee3c74e638595d9cb18 *man/loadTraces.Rd
+4776b51db3ef70bb113a869511cfee41 *man/makeTracesPolar.Rd
+629e2108bb97acca31fb01b782ecf3e7 *man/plotTraces.Rd
