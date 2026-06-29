@@ -1907,7 +1907,7 @@ plotStyleTraces <- function(rawTraces, matrixIntersection, polarTraces, dataOfEa
   
   #filteredTraces, origin.algorithm = "BottomMiddle", origin.x = NA, scaling.factor = 800/600, x_coor = 0, y_coor = 0, interval = 1, singleIncrements = TRUE, maskCategories = c()
   if (difference_plot){
-    differencePlot(rawTraces, origin.algorithm = origin.algorithm)
+    differencePlot(rawTraces, origin.algorithm = origin.algorithm, maskCategories = maskCategories)
   }
   
   if(length(pdf.filename)!=0 || length(png.filename)!=0 ){
@@ -2304,7 +2304,7 @@ differencePlot <- function(filteredTraces, origin.algorithm = "BottomMiddle", or
   plot(meanX, meanDifference, type = "l", col = "blue", lwd = 2, ylim = c(min(y1), max(y2)), xlim = c(min(x1), max(x2)), xaxt = "n", xlab = "angle from origin", ylab = "mean difference")
   #labelling x axis with degree from origin
   axis(1, at = meanX, labels = axisX, tck = 0)
-  axis(side=4, at = ZScorePositioning, labels=ZScoreLabels, col="red", col.axis="black")
+  axis(side=4, at = ZScorePositioning, labels=ZScoreLabels, col="black", col.axis="black") #should be red but change to black right side
   mtext("z score", side = 4, line = 3)
   
   lines(x1, y1, col = "blue", type = "l", lwd = 1)
@@ -2313,12 +2313,12 @@ differencePlot <- function(filteredTraces, origin.algorithm = "BottomMiddle", or
   
   lines(meanX, unlist(redLine), col = "red", lwd = 2)
   abline(h=0.0, lty = 2)
-  abline(h= ZScorePositioning, col="red", lty="dotted")
+  abline(h= ZScorePositioning, col="black", lty="dotted")
   
   #increments of one for z score
   if (singleIncrements){
     for (line in 1:length(additionalLightLines)){
-      abline(h = additionalLightLines[[line]], col = "pink", lty="dotted", lwd = 1)
+      abline(h = additionalLightLines[[line]], col = "darkgrey", lty="dotted", lwd = 1) #pink
     }
   }
   

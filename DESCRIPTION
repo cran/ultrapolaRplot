@@ -1,9 +1,9 @@
 Package: ultrapolaRplot
 Type: Package
 Title: Plotting Ultrasound Tongue Traces
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: c(person("Yana", "Outkin", role = c("aut", "cre"), email =
-    "youtkin1@swarthmore.edu"), person("Jonathan", "Washington", role = "aut", email = 
+    "youtkin3@gatech.edu"), person("Jonathan", "Washington", role = "aut", email = 
     "jwashin1@swarthmore.edu"))
 Depends: R (>= 4.1.0)
 Imports: RColorBrewer, tibble, rjson, ggplot2, Cairo, purrr, plyr,
@@ -25,9 +25,9 @@ Description: Plots traced ultrasound tongue imaging data according to a polar co
 License: GPL-3
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2026-04-24 03:08:02 UTC; yayaorigami
+Packaged: 2026-06-28 17:09:44 UTC; yayaorigami
 Author: Yana Outkin [aut, cre],
   Jonathan Washington [aut]
-Maintainer: Yana Outkin <youtkin1@swarthmore.edu>
+Maintainer: Yana Outkin <youtkin3@gatech.edu>
 Repository: CRAN
-Date/Publication: 2026-04-24 03:20:02 UTC
+Date/Publication: 2026-06-29 06:21:37 UTC
